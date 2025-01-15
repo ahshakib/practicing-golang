@@ -25,4 +25,29 @@ func main() {
 	fmt.Println(arrslice2)
 	arrslice = append(arrslice, arrslice2...)
 	fmt.Println(arrslice)
+
+	// var myMap map[string]int32 = make(map[string]int32)
+	// myMap["A"] = 1
+	// myMap["B"] = 2
+	// myMap["C"] = 3
+	var myMap = map[string]int32 {"A": 1, "B": 2, "C": 3}
+	var value, ok = myMap["D"]
+	if ok {
+		fmt.Println(value)
+	} else {
+		fmt.Println("Key not found")
+	}
+	fmt.Println(myMap)
+	delete(myMap, "C")
+	fmt.Println(myMap)
+
+	for key, val:= range myMap {
+		fmt.Printf("Key: %v, Value: %d\n", key, val)
+	}
+	for i := 0; i < len(arr); i++ {
+		fmt.Println(arr[i])
+	}
+	for _, val := range arr {
+		fmt.Print(val, " ")
+	}
 }
