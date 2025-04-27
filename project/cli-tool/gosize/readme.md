@@ -10,10 +10,15 @@ GoSize is a simple CLI tool to display the sizes of files and directories in a g
 ## Installation
 
 1. Clone the repository:
-   git clone [<repository-url>](https://github.com/ahshakib/practicing-golang.git)
+   ```
+   git clone https://github.com/ahshakib/practicing-golang.git
+   ```
+   ```
    cd project/cli-tool/gosize
+   ```
 
 2. Run the project:
    ```
    go run main.go <path_name>
+   // ex: go run main.go D:\movie2
    ```
